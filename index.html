@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -60,4 +60,50 @@
       margin-top: 2rem;
     }
     .disclaimer {
-      font-size: 0.8
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 2rem;
+    }
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem 0 2rem;
+    }
+    .logos img {
+      max-height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FRIPHARM – Smart Formulation</h1>
+  </header>
+  <main>
+    <section>
+      <div class="logos">
+        <img src="logo-smart-formulation.png" alt="Smart Formulation Logo">
+        <img src="logo-fripharm.png" alt="FRIPHARM Logo">
+      </div>
+
+      <h2>Predictive Stability Platform</h2>
+      <p>
+        The <strong>Smart Formulation</strong> project is based on a proprietary KNIME workflow developed by FRIPHARM®. This interface enables the prediction of pharmaceutical formulation stability based on their composition, storage temperature, and excipient used.
+      </p>
+
+      <p><strong>Visual demo:</strong></p>
+      <img src="demo-workflow.png" alt="KNIME workflow preview" width="100%" style="border: 1px solid #ccc; border-radius: 5px;">
+
+      <p><a href="#" class="button">Request Access</a></p>
+
+      <p class="disclaimer">
+        © FRIPHARM® – All rights reserved.<br>
+        The presented workflow is an original creation. Any unauthorized reproduction, modification or distribution is strictly prohibited. FRIPHARM is a registered trademark with the INPI.
+      </p>
+    </section>
+  </main>
+  <footer>
+    Site hosted on GitHub Pages | Contact: fri.pharm@chu-lyon.fr
+  </footer>
+</body>
+</html>
