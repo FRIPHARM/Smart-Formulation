@@ -3,104 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FRIPHARM | Smart Formulation</title>
+  <title>FRIPHARM – Smart Formulation</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; color: #333; }
-    header { background-color: #002855; color: white; padding: 1rem 2rem; text-align: center; }
-    h1 { margin: 0; }
-    .logo-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      margin-top: 1rem;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
     }
-    .logo-container img {
-      max-height: 120px;
-      height: auto;
+    header {
+      background-color: #002855;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
     }
-    main { padding: 2rem; }
-    section { max-width: 900px; margin: auto; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    footer { text-align: center; font-size: 0.9rem; color: #666; margin-top: 2rem; padding: 1rem; }
-    .disclaimer { font-size: 0.8rem; color: #888; margin-top: 1rem; }
-    .button, .lang-switch {
+    header img {
+      height: 60px;
+      vertical-align: middle;
+    }
+    h1 {
+      margin: 0.5rem 0 0;
+      font-size: 2rem;
+    }
+    main {
+      padding: 2rem;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .button {
+      display: inline-block;
       background-color: #0057a8;
       color: white;
       padding: 0.8rem 1.2rem;
-      border: none;
       border-radius: 5px;
-      cursor: pointer;
       text-decoration: none;
       margin-top: 1rem;
-      display: inline-block;
     }
-    .button:hover, .lang-switch:hover {
-      background-color: #004080;
+    .button:hover {
+      background-color: #003f7f;
     }
-    .lang-switch { float: right; margin-right: 2rem; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>FRIPHARM – Smart Formulation</h1>
-    <div class="logo-container">
-      <img src="smart-formulation.png" alt="Smart Formulation Logo">
-      <img src="logo-fripharm.jpg" alt="FRIPHARM Logo">
-    </div>
-    <button class="lang-switch" onclick="switchLang()">EN / FR</button>
-  </header>
-
-  <main>
-    <section>
-      <div id="content-fr">
-        <h2>Plateforme de prédiction de stabilité</h2>
-        <p>Le projet <strong>Smart Formulation</strong> repose sur un workflow KNIME propriétaire développé par FRIPHARM®. Cette interface permet d'évaluer la stabilité des formulations pharmaceutiques expérimentales en fonction de leur composition, température de stockage et excipient utilisé.</p>
-
-        <p><strong>Démo visuelle :</strong></p>
-        <img src="demo-workflow.png" alt="Aperçu du workflow KNIME" width="100%" style="border: 1px solid #ccc; border-radius: 5px;" />
-
-        <p><a href="#" class="button">Demander un accès</a></p>
-
-        <p class="disclaimer">
-          © FRIPHARM® – Tous droits réservés.<br />
-          Le workflow présenté est une création originale. Toute reproduction, modification ou diffusion non autorisée est strictement interdite. FRIPHARM est une marque déposée à l'INPI.
-        </p>
-      </div>
-
-      <div id="content-en" style="display: none;">
-        <h2>Predictive Stability Platform</h2>
-        <p>The <strong>Smart Formulation</strong> project is based on a proprietary KNIME workflow developed by FRIPHARM®. This interface enables the prediction of pharmaceutical formulation stability based on their composition, storage temperature, and excipient used.</p>
-
-        <p><strong>Visual demo:</strong></p>
-        <img src="demo-workflow.png" alt="KNIME workflow preview" width="100%" style="border: 1px solid #ccc; border-radius: 5px;" />
-
-        <p><a href="#" class="button">Request Access</a></p>
-
-        <p class="disclaimer">
-          © FRIPHARM® – All rights reserved.<br />
-          The presented workflow is an original creation. Any unauthorized reproduction, modification or distribution is strictly prohibited. FRIPHARM is a registered trademark with the INPI.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    Site développé sur GitHub Pages | Contact : fri.pharm@chu-lyon.fr
-  </footer>
-
-  <script>
-    function switchLang() {
-      const fr = document.getElementById("content-fr");
-      const en = document.getElementById("content-en");
-      if (fr.style.display === "none") {
-        fr.style.display = "block";
-        en.style.display = "none";
-      } else {
-        fr.style.display = "none";
-        en.style.display = "block";
-      }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding: 1rem;
+      margin-top: 2rem;
     }
-  </script>
-</body>
-</html>
-
+    .disclaimer {
+      font-size: 0.8
