@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FRIPHARM – Smart Formulation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRIPHARM | Smart Formulation</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f6f8;
+      background: #f9f9f9;
       margin: 0;
       padding: 0;
       color: #333;
@@ -18,13 +18,17 @@
       padding: 1rem 2rem;
       text-align: center;
     }
-    header img {
-      height: 60px;
-      vertical-align: middle;
-    }
     h1 {
-      margin: 0.5rem 0 0;
-      font-size: 2rem;
+      margin: 0;
+    }
+    .logos {
+      background-color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .logos img {
+      max-width: 150px;
+      margin: 0 20px;
     }
     main {
       padding: 2rem;
@@ -37,41 +41,29 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    h2 {
-      margin-top: 0;
-    }
-    .button {
-      display: inline-block;
-      background-color: #0057a8;
-      color: white;
-      padding: 0.8rem 1.2rem;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 1rem;
-    }
-    .button:hover {
-      background-color: #003f7f;
-    }
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #666;
-      padding: 1rem;
       margin-top: 2rem;
+      padding: 1rem;
     }
     .disclaimer {
       font-size: 0.8rem;
       color: #888;
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
-    .logos {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 1rem 0 2rem;
+    .button {
+      background-color: #0057a8;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
     }
-    .logos img {
-      max-height: 100px;
+    .button:hover {
+      background-color: #004080;
     }
   </style>
 </head>
@@ -79,31 +71,8 @@
   <header>
     <h1>FRIPHARM – Smart Formulation</h1>
   </header>
-  <main>
-    <section>
-      <div class="logos">
-        <img src="logo-smart-formulation.png" alt="Smart Formulation Logo">
-        <img src="logo-fripharm.png" alt="FRIPHARM Logo">
-      </div>
-
-      <h2>Predictive Stability Platform</h2>
-      <p>
-        The <strong>Smart Formulation</strong> project is based on a proprietary KNIME workflow developed by FRIPHARM®. This interface enables the prediction of pharmaceutical formulation stability based on their composition, storage temperature, and excipient used.
-      </p>
-
-      <p><strong>Visual demo:</strong></p>
-      <img src="demo-workflow.png" alt="KNIME workflow preview" width="100%" style="border: 1px solid #ccc; border-radius: 5px;">
-
-      <p><a href="#" class="button">Request Access</a></p>
-
-      <p class="disclaimer">
-        © FRIPHARM® – All rights reserved.<br>
-        The presented workflow is an original creation. Any unauthorized reproduction, modification or distribution is strictly prohibited. FRIPHARM is a registered trademark with the INPI.
-      </p>
-    </section>
-  </main>
-  <footer>
-    Site hosted on GitHub Pages | Contact: fri.pharm@chu-lyon.fr
-  </footer>
-</body>
-</html>
+  
+  <div class="logos">
+    <img src="logo-fripharm.jpg" alt="FRIPHARM Logo">
+    <img src="smart-formulation.png" alt="Smart Formulation Logo">
+  </
